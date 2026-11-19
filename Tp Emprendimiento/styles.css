@@ -1,223 +1,279 @@
 /* PALETA DE COLORES Y VARIABLES F1 */
+
 :root {
-  --f1-red: #e10600;
-  --f1-red-hover: #b80500;
-  --bg-dark: #0f0f15;
-  --bg-dark-panel: #181824;
-  --bg-card: #1e1e2d;
-  --text-light: #f8f9fa;
-  --text-muted: #a0a0b0;
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --font-racing: 'Titillium Web', 'Montserrat', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
+    --f1-red: #e10600;
+    --f1-red-hover: #b80500;
+    --bg-dark: #0f0f15;
+    --bg-dark-panel: #181824;
+    --bg-card: #1e1e2d;
+    --text-light: #f8f9fa;
+    --text-muted: #c2c2d1;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --font-racing: 'Titillium Web', 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  font-family: var(--font-body);
-  overflow-x: hidden;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    overflow-x: hidden;
 }
 
 .font-racing {
-  font-family: var(--font-racing);
-  letter-spacing: 0.05em;
+    font-family: var(--font-racing);
+    letter-spacing: 0.05em;
 }
 
+
+/* CORRECCIÓN DE CONTRASTE GENERAL Y CLASES DE BOOTSTRAP */
+
+p {
+    color: var(--text-muted);
+}
+
+.text-muted,
+.text-secondary,
+.text-body-secondary {
+    color: var(--text-muted) !important;
+}
+
+.text-dark {
+    color: var(--text-light) !important;
+}
+
+
 /* NAVBAR */
+
 .navbar {
-  background-color: rgba(15, 15, 21, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
+    background-color: rgba(15, 15, 21, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 .brand-logo {
-  height: 42px;
-  width: auto;
+    height: 42px;
+    width: auto;
 }
 
 .navbar-nav .nav-link {
-  color: var(--text-muted);
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: var(--f1-red) !important;
+    color: var(--f1-red) !important;
 }
 
+
 /* BOTONES */
+
 .btn-f1-red {
-  background-color: var(--f1-red);
-  color: #ffffff;
-  border: none;
-  transition: all 0.3s ease;
+    background-color: var(--f1-red);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
 }
 
 .btn-f1-red:hover {
-  background-color: var(--f1-red-hover);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(225, 6, 0, 0.4);
+    background-color: var(--f1-red-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(225, 6, 0, 0.4);
 }
 
 .btn-outline-f1 {
-  border: 1px solid var(--f1-red);
-  color: var(--f1-red);
-  background: transparent;
-  transition: all 0.3s ease;
+    border: 1px solid var(--f1-red);
+    color: var(--f1-red);
+    background: transparent;
+    transition: all 0.3s ease;
 }
 
 .btn-outline-f1:hover {
-  background-color: var(--f1-red);
-  color: #ffffff;
+    background-color: var(--f1-red);
+    color: #ffffff;
 }
 
+
 /* CARRUSEL DE IMÁGENES */
+
 .carousel-img {
-  height: 60vh;
-  min-height: 400px;
-  object-fit: cover;
-  filter: brightness(0.75);
+    height: 60vh;
+    min-height: 400px;
+    object-fit: cover;
+    filter: brightness(0.75);
 }
 
 .carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(15,15,21,0.2) 0%, rgba(15,15,21,0.9) 100%);
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(15, 15, 21, 0.2) 0%, rgba(15, 15, 21, 0.9) 100%);
+    z-index: 1;
 }
 
 .carousel-caption {
-  z-index: 2;
-  bottom: 15%;
+    z-index: 2;
+    bottom: 15%;
 }
+
 
 /* STRIP DE MARCAS */
+
 .brand-strip {
-  background-color: #12121a;
-  font-family: var(--font-racing);
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
-  font-size: 0.85rem;
+    background-color: #12121a;
+    font-family: var(--font-racing);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    font-size: 0.85rem;
 }
 
+
 /* BOTONES DE FILTRO */
+
 .btn-filter {
-  background-color: var(--bg-dark-panel);
-  color: var(--text-muted);
-  border: 1px solid var(--border-subtle);
-  border-radius: 30px;
-  padding: 6px 18px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+    background-color: var(--bg-dark-panel);
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .btn-filter:hover,
 .btn-filter.active {
-  background-color: var(--f1-red);
-  color: #ffffff;
-  border-color: var(--f1-red);
+    background-color: var(--f1-red);
+    color: #ffffff;
+    border-color: var(--f1-red);
 }
 
+
 /* TARJETAS DE PRODUCTOS */
+
 .card-product {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-product:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-  border-color: var(--f1-red);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--f1-red);
 }
 
 .card-product .card-img-top {
-  height: 280px;
-  object-fit: cover;
+    height: 280px;
+    object-fit: cover;
 }
 
 .badge-tag {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background-color: rgba(225, 6, 0, 0.88);
-  color: #ffffff;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(225, 6, 0, 0.88);
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .price-tag {
-  font-family: var(--font-racing);
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #ffffff;
+    font-family: var(--font-racing);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
 }
 
+
 /* SECCIÓN PIT STOP */
+
 .bg-dark-panel {
-  background-color: var(--bg-dark-panel);
+    background-color: var(--bg-dark-panel);
+    color: var(--text-light);
 }
 
 .pit-box-card {
-  background: linear-gradient(145deg, #181824, #12121a);
+    background: linear-gradient(145deg, #181824, #12121a);
+    color: var(--text-light);
 }
 
+
 /* FORMULARIOS */
+
 .form-f1 {
-  background-color: var(--bg-dark);
-  border: 1px solid var(--border-subtle);
-  color: #ffffff;
-  border-radius: 8px;
-  padding: 12px 16px;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border-subtle);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.form-f1::placeholder {
+    color: var(--text-muted);
+    opacity: 0.75;
 }
 
 .form-f1:focus {
-  background-color: var(--bg-dark);
-  border-color: var(--f1-red);
-  color: #ffffff;
-  box-shadow: 0 0 0 0.25rem rgba(225, 6, 0, 0.25);
+    background-color: var(--bg-dark);
+    border-color: var(--f1-red);
+    color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(225, 6, 0, 0.25);
 }
 
+
 /* FOOTER */
+
 .footer {
-  background-color: #0b0b0f;
+    background-color: #0b0b0f;
+    color: var(--text-muted);
 }
 
 .footer-logo {
-  height: 32px;
+    height: 32px;
 }
+
 
 /* ENCABEZADO DE PÁGINAS INTERNAS (Nosotros / Contacto) */
+
 .page-header {
-  background-color: var(--bg-dark-panel);
-  border-bottom: 1px solid var(--border-subtle);
+    background-color: var(--bg-dark-panel);
+    border-bottom: 1px solid var(--border-subtle);
+    color: #ffffff;
 }
 
+.page-header h1,
+.page-header h2,
+.page-header p,
+.page-header span {
+    color: #ffffff;
+}
+
+
 /* BOTÓN VOLVER ARRIBA */
+
 .btn-floating {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  box-shadow: 0 4px 15px rgba(225, 6, 0, 0.5);
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.5);
 }
