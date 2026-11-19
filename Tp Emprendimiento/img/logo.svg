@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48">
+  <defs>
+    <linearGradient id="apexRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e10600"/>
+      <stop offset="100%" stop-color="#ff2d1f"/>
+    </linearGradient>
+  </defs>
+  <!-- Icono: flecha/chevron estilo alerón -->
+  <g transform="translate(0,4)">
+    <polygon points="2,36 16,36 30,6 20,6" fill="url(#apexRed)"/>
+    <polygon points="18,36 32,36 46,6 36,6" fill="#f8f9fa"/>
+  </g>
+  <text x="54" y="22" font-family="'Titillium Web','Montserrat',sans-serif" font-weight="900" font-size="18" letter-spacing="1" fill="#f8f9fa">APEX</text>
+  <text x="54" y="39" font-family="'Titillium Web','Montserrat',sans-serif" font-weight="700" font-size="11.5" letter-spacing="3" fill="#e10600">F1 STORE</text>
+</svg>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Apex F1 Store</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Titillium+Web:ital,wght@0,400;0,700;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR BOOTSTRAP -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.svg" alt="Apex F1 Store Logo" class="brand-logo me-2">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Navegación">
+        <i class="bi bi-list fs-2 text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html"><i class="bi bi-info-circle me-1"></i>Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-f1-red btn-sm px-3 fw-bold font-racing" href="index.html#catalogo">SHOP DROP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO DE PÁGINA -->
+  <header class="page-header py-5">
+    <div class="container text-center">
+      <span class="text-f1-red fw-bold text-uppercase tracking-widest font-racing">Boxes de Comunicación</span>
+      <h1 class="display-4 font-racing fw-bold text-white mt-2">CONTACTANOS</h1>
+      <p class="text-muted lead">¿Dudas sobre un producto o tu pedido? Dejanos tu mensaje y te respondemos a la brevedad.</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="col-lg-7">
+          <div class="card card-product p-4 p-md-5">
+            <h3 class="font-racing text-white mb-4">ENVIANOS UN MENSAJE</h3>
+
+            <!-- Alerta de confirmación (oculta por defecto, la muestra script.js) -->
+            <div id="contact-alert" class="alert alert-success d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              ¡Gracias por tu mensaje! Te responderemos a la brevedad.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control form-f1" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control form-f1" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                <div class="invalid-feedback">Ingresá un email válido.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <select class="form-select form-f1" id="asunto" name="asunto" required>
+                  <option value="" selected disabled>Elegí un motivo de consulta</option>
+                  <option value="producto">Consulta sobre un producto</option>
+                  <option value="pedido">Estado de mi pedido</option>
+                  <option value="cambios">Cambios y devoluciones</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <div class="invalid-feedback">Seleccioná un asunto.</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control form-f1" id="mensaje" name="mensaje" rows="5" placeholder="Contanos en qué te podemos ayudar" required></textarea>
+                <div class="invalid-feedback">Escribí tu mensaje.</div>
+              </div>
+
+              <button type="submit" class="btn btn-f1-red btn-lg fw-bold font-racing w-100">
+                <i class="bi bi-send-fill me-2"></i>ENVIAR MENSAJE
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- DATOS DE UBICACIÓN Y REDES -->
+        <div class="col-lg-5">
+          <div class="card card-product h-100 p-4 p-md-5">
+            <h3 class="font-racing text-white mb-4">DATOS DE CONTACTO</h3>
+
+            <ul class="list-unstyled text-muted">
+              <li class="mb-4 d-flex">
+                <i class="bi bi-geo-alt-fill text-f1-red fs-4 me-3"></i>
+                <div>
+                  <h6 class="text-white font-racing mb-1">Showroom</h6>
+                  <span>Av. Circuito 1550, Córdoba, Argentina</span>
+                </div>
+              </li>
+              <li class="mb-4 d-flex">
+                <i class="bi bi-whatsapp text-f1-red fs-4 me-3"></i>
+                <div>
+                  <h6 class="text-white font-racing mb-1">WhatsApp</h6>
+                  <span>+54 9 351 000-0000</span>
+                </div>
+              </li>
+              <li class="mb-4 d-flex">
+                <i class="bi bi-envelope-fill text-f1-red fs-4 me-3"></i>
+                <div>
+                  <h6 class="text-white font-racing mb-1">Email</h6>
+                  <span>hola@apexf1store.com</span>
+                </div>
+              </li>
+              <li class="mb-4 d-flex">
+                <i class="bi bi-clock-fill text-f1-red fs-4 me-3"></i>
+                <div>
+                  <h6 class="text-white font-racing mb-1">Horario de atención</h6>
+                  <span>Lunes a viernes de 10 a 19hs</span>
+                </div>
+              </li>
+            </ul>
+
+            <hr class="border-secondary my-4">
+
+            <h6 class="text-white font-racing mb-3">SEGUINOS EN REDES</h6>
+            <div class="social-links fs-3">
+              <a href="#" class="me-3 text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="me-3 text-white"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="me-3 text-white"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+            </div>
+
+            <!-- MAPA DE UBICACIÓN -->
+            <div class="ratio ratio-16x9 mt-4 rounded-4 overflow-hidden">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-64.21%2C-31.44%2C-64.16%2C-31.39&layer=mapnik"
+                title="Ubicación Apex F1 Store" style="border:0;" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 border-top border-secondary">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <img src="img/logo.svg" alt="Apex F1 Store Logo" class="footer-logo mb-2">
+          <p class="text-muted small mb-0">Streetwear & Merchandising oficial de Fórmula 1.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social-links">
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <span class="text-muted small">&copy; <span id="year"></span> Apex F1 Store. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btn-back-to-top" class="btn btn-f1-red btn-floating" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex F1 Store | Streetwear Racing</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Titillium+Web:ital,wght@0,400;0,700;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR BOOTSTRAP -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.svg" alt="Apex F1 Store Logo" class="brand-logo me-2">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Navegación">
+        <i class="bi bi-list fs-2 text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html"><i class="bi bi-info-circle me-1"></i>Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-f1-red btn-sm px-3 fw-bold font-racing" href="#catalogo">SHOP DROP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARRUSEL DE IMÁGENES BOOTSTRAP -->
+  <section class="carousel-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="4500">
+          <div class="carousel-overlay"></div>
+          <img src="img/remera-ferrari-2026.jpg" class="d-block w-100 carousel-img" alt="Colección Scuderia Ferrari">
+          <div class="carousel-caption">
+            <span class="badge bg-danger text-uppercase tracking-wider mb-2 fs-6">NUEVO DROP 2026</span>
+            <h1 class="display-3 fw-black font-racing text-uppercase">SCUDERIA COLLECTION</h1>
+            <p class="lead d-none d-md-block text-light">Indumentaria oficial y streetwear urbano con el ADN del Cavallino Rampante.</p>
+            <a href="#catalogo" class="btn btn-f1-red btn-lg mt-2 fw-bold font-racing">EXPLORAR CATALOGO</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="4500">
+          <div class="carousel-overlay"></div>
+          <img src="img/buzo-alpine-2026.jpg" class="d-block w-100 carousel-img" alt="Buzos Paddock Outerwear">
+          <div class="carousel-caption">
+            <span class="badge bg-info text-dark text-uppercase tracking-wider mb-2 fs-6">OUTERWEAR PREMIUM</span>
+            <h2 class="display-3 fw-black font-racing text-uppercase">PADDOCK HOODIES</h2>
+            <p class="lead d-none d-md-block text-light">Buzos térmicos de alta calidad, frisa pesada y siluetas oversize para la calle.</p>
+            <a href="#catalogo" class="btn btn-f1-red btn-lg mt-2 fw-bold font-racing">VER BUZOS</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="4500">
+          <div class="carousel-overlay"></div>
+          <img src="img/gorra-redbull.jpg" class="d-block w-100 carousel-img" alt="Accesorios y Gorras F1">
+          <div class="carousel-caption">
+            <span class="badge bg-warning text-dark text-uppercase tracking-wider mb-2 fs-6">COLECCIONABLES</span>
+            <h2 class="display-3 fw-black font-racing text-uppercase">HELMETS & CAPS</h2>
+            <p class="lead d-none d-md-block text-light">Gorras snapback exclusivas y accesorios de telemetría de tus pilotos favoritos.</p>
+            <a href="#catalogo" class="btn btn-f1-red btn-lg mt-2 fw-bold font-racing">VER ACCESORIOS</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- STRIP DE ESCUDERÍAS -->
+  <section class="brand-strip py-3 border-top border-bottom border-secondary">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <span>FERRARI</span>
+      <span>MCLAREN</span>
+      <span>RED BULL</span>
+      <span>ALPINE</span>
+      <span>WILLIAMS</span>
+      <span>MERCEDES</span>
+      <span>AUDI</span>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DINÁMICO CON FILTRO JS -->
+  <section class="py-5" id="catalogo">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-f1-red fw-bold text-uppercase tracking-widest font-racing">Catálogo Oficial</span>
+        <h2 class="display-5 font-racing fw-bold text-white mt-1">PRODUCTOS DESTACADOS</h2>
+        <p class="text-muted">Elige tu categoría preferida y lleva la velocidad a tu outfit diario</p>
+
+        <!-- FILTROS JS -->
+        <div class="d-flex justify-content-center flex-wrap gap-2 mt-4" id="filter-buttons">
+          <button class="btn btn-filter active" data-filter="all">Todos</button>
+          <button class="btn btn-filter" data-filter="remeras">Remeras</button>
+          <button class="btn btn-filter" data-filter="buzos">Buzos y Camperas</button>
+          <button class="btn btn-filter" data-filter="gorras">Gorras y Cascos</button>
+          <button class="btn btn-filter" data-filter="termicas">Térmicas</button>
+        </div>
+      </div>
+
+      <!-- GRID DE PRODUCTOS ENLAZADOS -->
+      <div class="row g-4" id="product-grid">
+
+        <!-- Producto 1: Remera Ferrari -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="remeras">
+          <div class="card card-product h-100">
+            <span class="badge-tag">Ferrari</span>
+            <img src="img/remera-ferrari-2026.jpg" class="card-img-top" alt="Remera Ferrari 2026">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Remera Ferrari 2026</h5>
+              <p class="card-text text-muted">Corte oversize en algodón peinado 24/1 con detalles oficiales de escudería.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$28.500</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2: Remera Red Bull -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="remeras">
+          <div class="card card-product h-100">
+            <span class="badge-tag">Red Bull</span>
+            <img src="img/remera-redbull-2026.jpg" class="card-img-top" alt="Remera Red Bull Racing">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Remera Red Bull Racing</h5>
+              <p class="card-text text-muted">Estampa azul y marino con serigrafía de alta densidad sobre tela respirable.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$27.900</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3: Buzo Alpine -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="buzos">
+          <div class="card card-product h-100">
+            <span class="badge-tag">Alpine</span>
+            <img src="img/buzo-alpine-2026.jpg" class="card-img-top" alt="Buzo Alpine Hooded">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Buzo Alpine Hooded</h5>
+              <p class="card-text text-muted">Frisado pesado azul eléctrico con capucha forrada y bolsillo canguro.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$42.900</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4: Buzo Williams -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="buzos">
+          <div class="card card-product h-100">
+            <span class="badge-tag">Williams</span>
+            <img src="img/buzo-williams-2025.jpg" class="card-img-top" alt="Buzo Williams Racing">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Buzo Williams Racing</h5>
+              <p class="card-text text-muted">Buzo de abrigo azul marino con detalles técnicos de patrocinadores oficiales.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$45.000</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 5: Gorra Red Bull -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="gorras">
+          <div class="card card-product h-100">
+            <span class="badge-tag">Red Bull</span>
+            <img src="img/gorra-redbull.jpg" class="card-img-top" alt="Gorra Snapback Red Bull">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Gorra Snapback Red Bull</h5>
+              <p class="card-text text-muted">Visera estructurada azul con parche frontal Oracle Red Bull Racing.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$14.500</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6: Térmica McLaren -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="termicas">
+          <div class="card card-product h-100">
+            <span class="badge-tag">McLaren</span>
+            <img src="img/termica-mclaren-2025.jpg" class="card-img-top" alt="Térmica McLaren Performance">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title font-racing">Térmica McLaren Performance</h5>
+              <p class="card-text text-muted">Cuello alto de compresión anatómica para conservar temperatura en alta actividad.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                <span class="price-tag">$21.900</span>
+                <a href="contacto.html" class="btn btn-outline-f1 btn-sm">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PIT STOP EXPERIENCE -->
+  <section class="py-5 bg-dark-panel">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="text-f1-red font-racing text-uppercase fw-bold">Pit Stop Unboxing</span>
+          <h2 class="display-5 font-racing fw-bold text-white">TU PEDIDO LLEGA COMO UN PARO EN BOXES</h2>
+          <p class="text-muted">Enviamos cada prenda en una caja rígida de colección con sellos oficiales, stickers exclusivos y detalles metálicos inspirados en la alta competencia.</p>
+          <ul class="list-unstyled mt-4 text-light">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-f1-red me-2"></i>Caja crate reforzada estilo paddock</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-f1-red me-2"></i>Pack de stickers exclusivos de cada escudería</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-f1-red me-2"></i>Certificado de calidad y autenticidad</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="pit-box-card p-4 rounded-4 border border-secondary">
+            <i class="bi bi-box-seam display-1 text-f1-red mb-3 d-block"></i>
+            <h4 class="font-racing text-white">BOX 04 - PIT STOP READY</h4>
+            <span class="badge bg-danger mt-2">100% SECURE SHIPPING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 border-top border-secondary">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <img src="img/logo.svg" alt="Apex F1 Store Logo" class="footer-logo mb-2">
+          <p class="text-muted small mb-0">Streetwear & Merchandising oficial de Fórmula 1.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social-links">
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="me-3 text-white fs-5"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <span class="text-muted small">&copy; <span id="year"></span> Apex F1 Store. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btn-back-to-top" class="btn btn-f1-red btn-floating" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
